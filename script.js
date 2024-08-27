@@ -6,44 +6,70 @@ const textoResultado = document.querySelector(".texto-resultado") ;
 
 const perguntas =[
     {
-        enunciado : "Em sua cidade ocorrem assédios e desrespeitos às mulheres e aos assentos prioritários?",
+        enunciado : "Você concorda com o uso de agrotóxicos na agricultura, mesmo sabendo dos seus possíveis impactos na saúde humana e ambiental?",
         alternativas : [
             {
-                texto: "Sim, acontece com frequência. Estabelecer assentos  e portas de entrada e saída prioritários para gestantes, idosos, crianças e deficientes.",
-                afirmacao: "Resposta positiva.  Facilitar a entrada e a saída de um público específico." 
+                texto: "Sim, concordo. Acredito que os agrotóxicos são essenciais para aumentar a produção de alimentos e garantir a segurança alimentar da população. Além disso, as tecnologias e os controles atuais minimizam os riscos.",
+                afirmacao: "Prioriza a produção em larga escala e a rentabilidade. Podem ter uma visão mais otimista em relação às tecnologias e aos mecanismos de controle." 
             },
             {
-                texto: "Não ou raramente." ,
-                afirmacao: "Resposta negativa. Manter os assentos e as entradas do transporte público no modelo atual."
+                texto: "Não, não concordo. Acredito que os riscos à saúde humana e ao meio ambiente superam os benefícios da produção em larga escala. Existem alternativas mais sustentáveis, como a agricultura orgânica, que podem garantir a produção de alimentos saudáveis sem a necessidade de agrotóxicos." ,
+                afirmacao: "Se preocupa com a saúde, o meio ambiente e a sustentabilidade. Valoriza a produção de alimentos saudáveis e a preservação dos recursos naturais."
             }
         ]
     },
     {
-        enunciado : "O desmatamento no Brasil atingiu índices alarmantes., tornando-se praticamente cultural. Os efeitos estão sendo sentidos no dia-a-dia da população. É possível minimizar o desmatamento no país?",
+        enunciado : "Como você avalia a relação entre o desmatamento e o uso de agrotóxicos?",
         alternativas : [
             {
-                texto: "Sim, por intermédio de políticas de fiscalização e controle ambiental rigoroso",
-                afirmacao: "Com a rigidez da fiscalização podemos induzir a mudança de comportamento das pessoas por meio de sanções."
+                texto: "Acredito que o desmatamento e o uso de agrotóxicos são processos distintos, embora possam ocorrer em conjunto. O desmatamento é necessário para expandir a fronteira agrícola e atender à demanda por alimentos, enquanto os agrotóxicos são ferramentas importantes para proteger as culturas.",
+                afirmacao: "Prioriza a produção agrícola em detrimento da preservação ambiental. Pode ter uma visão mais fragmentada dos problemas ambientais."
             },
             {
-                texto: "Não, porque as leis não são cumpridas" ,
-                afirmacao: "Há deficiência no sistema de fiscalização." 
+                texto: "O desmatamento e o uso de agrotóxicos estão intimamente ligados. O desmatamento abre caminho para a expansão da monocultura e o uso intensivo de agrotóxicos, o que contamina o solo, a água e a biodiversidade." ,
+                afirmacao: "Possui consciência ambiental e social. Vê a relação entre desmatamento e agrotóxicos como um problema complexo e interligado. Valoriza a preservação da biodiversidade e a sustentabilidade." 
             }
         ]
     },
     {
-        enunciado : "Qual as consequências do uso de agrotóxico na agricultura?",
+        enunciado : "Você acredita que as empresas de agrotóxicos têm responsabilidade social e ambiental?",
         alternativas : [
             {
-                texto: "Há um impacto muito grande no meio ambiente, causando prejuízos ao solo, água e atmosfera. ",
-                afirmacao: "Causando a morte das abelhas, diminuindo a diversidade das plantas, gerando um impacto econômico."
+                texto: "Sim, acredito que as empresas têm a responsabilidade de desenvolver produtos mais seguros e de investir em tecnologias que minimizem os impactos ambientais. Além disso, devem contribuir para o desenvolvimento das comunidades onde atuam.",
+                afirmacao: "Valoriza a responsabilidade social e ambiental das empresas, mas ainda acredita no papel do agronegócio para o desenvolvimento econômico."
             },
             {
-                texto: "A produção das espécies  é maior, reduz o controle de pragas, aumenta a distribuição da produção." ,
-                afirmacao: "Aumentando a produção há uma vantagem no setor de exportação, favorecendo assim a economia do país."
+                texto: "Não, acredito que o principal objetivo das empresas de agrotóxicos é o lucro, e elas estão mais preocupadas em maximizar seus lucros do que em proteger a saúde e o meio ambiente." ,
+                afirmacao: "Possui crítica em relação ao modelo econômico atual e desconfia das grandes empresas. Valoriza a produção local e a economia solidária."
             }
         ]
-    }
+    },
+    {
+        enunciado : "Qual a sua opinião sobre a regulamentação do uso de agrotóxicos no Brasil?",
+        alternativas : [
+            {
+                texto: "Acredito que a legislação brasileira é adequada e que as agências reguladoras atuam de forma eficiente para garantir a segurança dos produtos.",
+                afirmacao: "Confia nas instituições governamentais e acredita que a legislação atual é suficiente para garantir a segurança alimentar e ambiental."
+            },
+            {
+                texto: "Acredito que a legislação brasileira é muito permissiva e que os interesses das empresas de agrotóxicos influenciam as decisões do governo. É necessário fortalecer a fiscalização e aumentar os requisitos para a registro de novos produtos." ,
+                afirmacao: "Desconfia das instituições governamentais e acredita que a legislação brasileira precisa ser reformulada para proteger a saúde e o meio ambiente."
+            }
+        ]
+    },
+    {
+        enunciado : "Você acredita que a agricultura familiar pode ser uma alternativa mais sustentável ao agronegócio?",
+        alternativas : [
+            {
+                texto: "Sim, acredito que a agricultura familiar é mais sustentável, pois utiliza menos agrotóxicos e preserva a biodiversidade. Além disso, contribui para a segurança alimentar e o desenvolvimento local.",
+                afirmacao: "Valoriza a produção de alimentos saudáveis, a preservação da biodiversidade e o desenvolvimento local."
+            },
+            {
+                texto: "Não, acredito que a agricultura familiar não tem a mesma capacidade de produção do agronegócio e não consegue atender à demanda por alimentos da população." ,
+                afirmacao: "Prioriza a produção em larga escala e a segurança alimentar, e pode subestimar a importância da agricultura familiar para a sustentabilidade."
+            }
+        ]
+    }    
 ] ;
 
 let atual = 0 ;
